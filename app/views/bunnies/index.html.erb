@@ -1,0 +1,14 @@
+  <h1>Bunnies Like Comics</h1>
+    <% @bunnies.each do |bunny| %>
+      <div class="bunny">
+         <p><strong><%= bunny.name %></strong> is a <%= bunny.color %> <%= bunny.breed %>. <%= bunny.name %> is <%= bunny.age %> old. This bunny's favorite comic book is <%= bunny.favorite_comic_book %>.</p>
+
+         <%= link_to 'Edit this bunny', edit_bunny_path(bunny) %> <%= link_to 'Destroy this bunny', bunny, method: :delete, data: { confirm: "Don't delete this sweet rabbit!"} %>
+        </div>
+    <% end %>
+
+  <br><br><br>
+
+  <%= link_to 'Add A New Bunny', new_bunny_path %>
+
+

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bunny.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @bunny.age %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @bunny.color %>
+</p>
+
+<p>
+  <strong>Breed:</strong>
+  <%= @bunny.breed %>
+</p>
+
+<p>
+  <strong>Favorite comic book:</strong>
+  <%= @bunny.favorite_comic_book %>
+</p>
+
+<%= link_to 'Edit', edit_bunny_path(@bunny) %> |
+<%= link_to 'Back', bunnies_path %>
